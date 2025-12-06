@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UI Example - ID, Tag, Class</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f0f4ff;
+    }
+ 
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+ 
+    .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 25px;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+        animation: fadeIn 0.8s ease;
+    }
+ 
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+ 
+    button {
+        background: #6c63ff;
+        color: white;
+        border: none;
+        padding: 10px 22px;
+        margin-top: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+ 
+    button:hover {
+        background: #5248d6;
+    }
+ 
+    .images img {
+        border-radius: 10px;
+        margin-right: 10px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        transition: transform .3s;
+    }
+ 
+    .images img:hover {
+        transform: scale(1.1);
+    }
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<h1>JavaScript DOM Example – ID • Tag • Class</h1>
+ 
+<!-- 1️⃣ ID Example -->
+<div class="card">
+<h2 id="title">This is Original Heading</h2>
+<button onclick="changeIdColor()">Change Heading Color</button>
+</div>
+ 
+<!-- 2️⃣ Tag Example -->
+<div class="card">
+<h3>Paragraph Update (Tag Example)</h3>
+ 
+    <p>This is paragraph 1</p>
+<p>This is paragraph 2</p>
+<p>This is paragraph 3</p>
+ 
+    <button onclick="changeTagText()">Change All Paragraphs</button>
+</div>
+ 
+<!-- 3️⃣ Class Example -->
+<div class="card">
+<h3>Image Update (Class Example)</h3>
+ 
+    <div class="images">
+<img class="myImage" src="https://via.placeholder.com/120" width="120">
+<img class="myImage" src="https://via.placeholder.com/120" width="120">
+<img class="myImage" src="https://via.placeholder.com/120" width="120">
+</div>
+ 
+    <button onclick="changeImage()">Change Class Images</button>
+</div>
+ 
+<script>
+ 
+    // 1️⃣ Change color using ID
+    function changeIdColor() {
+        document.getElementById("title").style.color = "#ff3b3b";
+    }
+ 
+    // 2️⃣ Change TAG text
+    function changeTagText() {
+        let paras = document.getElementsByTagName("p");
+ 
+        for (let i = 0; i < paras.length; i++) {
+            paras[i].innerHTML = "Paragraph updated using Tag!";
+            paras[i].style.color = "#0072ff";
+        }
+    }
+ 
+    // 3️⃣ Change CLASS images
+    function changeImage() {
+        let imgs = document.getElementsByClassName("myImage");
+ 
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].src = "https://picsum.photos/120?random=" + Math.random();
+        }
+    }
+ 
+</script>
+ 
+</body>
+</html>
