@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="allinOne.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;"> Basics (Introduction,use,history,feature).</h1>
+    </header>
+    <div>
+        <h4 class="a1"> 1.What is JavaScript?</h4>
+        <p>JavaScript is a programming language that is used for converting static web pages to
+            interactive and dynamic web pages. </p>
+        <h4 class="a1">2.What is JavaScript engine?</h4>
+        <p>A JavaScript engine is a program present in web browsers that executes JavaScript code.</p>
+        <h4>3.Javascript Engines</h4>
+        <p>V8-Chrome</p>
+        <p>SpiderMonkey-FireFOX</p>
+        <p>JavascriptCore-Safari</p>
+        <p>Chakra-Edge</p>
+
+        <h4>4.JavaScript Features</h4>
+        <p>Case Sensitive</p>
+        <p>Dynamic Typing</p>
+        <p>Object-Based Language</p>
+        <p>First-Class Functions</p>
+
+        <h4>5.Javascript History</h4>
+        <p>Brenden Eich developed JavaScript in 1995 while working at Netscape.</p>
+        <p>Initially, it was named Mocha, then renamed to LiveScript, and finally to JavaScript.</p>
+        <p>In 1996, JavaScript was submitted to ECMA International</p>
+
+
+
+        <h4 class="a1">What are Client side and Server side?</h4>
+        <h5>Client Side</h5>
+        <p>- A client is a device, application, or software component that requests and consumes services
+            or resources from a server. </p>
+        <h5>Server Side</h5>
+        <p>- A server is a device, computer, or software application that provides services, resources, or
+            functions to clients.</p>
+        <img src="Screenshot 2025-12-08 160843.jpg" alt="">
+    </div>
+    <hr>
+    <div>
+        <h1 style="text-align: center;"> Variables </h1>
+        <h4 class="a1"> What are variables?</h4>
+        <p> Variables are used to store data.</p>
+        <h4>6.Types of Variables</h4>
+        <p> var</p>
+        <p> let</p>
+        <p> const</p>
+
+        <h4>let</h4>
+        <p> - The let keyword is used to declare a block-scoped variable. </p>
+        <h4>const</h4>
+        <p> - The const keyword is used to declare a block-scoped variable that cannot be reassigned. </p>
+        <h4>var</h4>
+        <p> - The var keyword is used to declare a function-scoped or globally-scoped variable. </p>
+    </div>
+    <hr>
+    <div>
+        <h1 style="text-align: center;"> Data Types </h1>
+        <h4 class="a1"> What are Data Types?</h4>
+        <p> Data types are used to define the type of data that can be stored in a variable.</p>
+        <h4>7.Types of Data Types</h4>
+        <p> Primitive Data Types</p>
+        <p> Non-Primitive Data Types</p>
+
+        <h4>Primitive Data Types</h4>
+        <h5> - String</h5>
+        <p>Example</p>
+        <p> let name = "John";<br>
+            let city = 'New York';<br>
+            console.log(name);
+
+        </p>
+
+
+
+        <h5> - Number</h5>
+        <p>Example</p>
+        <p> let age = 30;<br>
+            let price = 99.99;<br>
+            console.log(age);</p>
+        <h5> - Boolean</h5>
+        <p>Example</p>
+        <p> let isStudent = true;<br>
+            let hasLicense = false;<br>
+            console.log(isStudent);</p>
+        <h5> - Null</h5>
+        <p>Example</p>
+        <p> let emptyValue = null;<br>
+            console.log(emptyValue);</p>
+        <h5> - Undefined</h5>
+        <p>Example</p>
+        <p> let notGiven;<br>
+            console.log(notGiven);</p>
+
+        <h4>Non-Primitive Data Types</h4>
+        <h5> - Object</h5>
+        <p>Example</p>
+        <p> let person = {<br>
+            name: "Alice",<br>
+            age: 25<br>
+            };<br>
+
+        <h5> - Array</h5>
+        <p>Example</p>
+        <p> let numbers = [1, 2, 3, 4, 5];<br>
+            console.log(numbers);</p>
+        <h5> - Function</h5>
+        <h5>Example</h5>
+        <p> function greet() {<br>
+            console.log("Hello!");<br>
+            }<br>
+            greet();</p>
+    </div>
+    <hr>
+    <div>
+        <h1 style="text-align: center;"> Operators </h1>
+        <h4 class="a1"> What are Operators?</h4>
+        <p> Operators are used to perform operations on variables and values.</p>
+        <h4>8.Types of Operators</h4>
+        <h5> Arithmetic Operators</h5>
+        <p>It is used to perform mathematical operations like addition, subtraction, multiplication, and division.</p>
+        <p>Example</p>
+        <p>
+            let a = 10;<br>
+            let b = 5;<br>
+            <br>    
+            let sum = a + b;<br>
+            console.log(sum);<br>
+            <br>
+            let difference = a - b;<br>
+            console.log(difference);<br>
+            <br>
+            let product = a * b; <br>
+            console.log(product);<br>
+            <br>
+            let quotient = a / b; <br>
+            console.log(quotient);
+        </p>
+        <h5> Assignment Operators</h5>
+        <p>It is used to assign values to variables.</p>
+        <p>Example</p>
+        <p>
+            let x = 10; <br>
+            x += 5; // x = x + 5 <br>
+            console.log(x); <br>
+            <br>
+            x -= 3; // x = x - 3 <br>
+            console.log(x); <br>
+            <br>
+            x *= 2; // x = x * 2 <br>
+            console.log(x); <br>
+            <br>
+            x /= 4; // x = x / 4 <br>
+            console.log(x);
+        <h5> Comparison Operators</h5>
+        <p>It is used to compare two values and return a boolean result (true or false).</p>
+        <p>Example</p>
+        <p>
+            let a = 10; <br>
+            let b = 5; <br>
+            <br>
+            console.log(a == b); // false <br>
+            console.log(a != b); // true <br>
+            console.log(a > b); // true <br>
+            console.log(a < b); // false <br>
+            console.log(a >= b); // true <br>
+            console.log(a <= b); // false
+        </p>
+        <h5> Logical Operators</h5>
+        <p>It is used to combine multiple boolean expressions and return a boolean result.</p>
+        <p>Example</p>
+        <p>
+            let isAdult = true; <br>
+            let hasLicense = false; <br>
+            <br>
+            console.log(isAdult && hasLicense); // false <br>
+            console.log(isAdult || hasLicense); // true <br>
+            console.log(!isAdult); // false
+        <h5> String Operators</h5>
+        <p>It is used to concatenate (combine) strings.</p>
+        <p>Example</p>
+        <p>
+            let greeting = "Hello, " + "world!";<br>
+            console.log(greeting);
+        </p>
+    </div><hr>
+    <div>
+        <h1 style="text-align: center;">Conditional statements.</h1>
+        <h4 class="a1"> What are Conditional statements?</h4>
+        <p> Conditional statements are used to perform different actions based on different conditions.</p>
+        <h4>9.Types of Conditional statements</h4>
+       
+        
+        <h5> if...else if...else statement</h5>
+        <p>Example</p>
+        <p>
+            let age = 20; <br>
+            if (age < 13) { <br>
+            console.log("You are a child."); <br>
+            } 
+            else if (age < 18) { <br>
+            console.log("You are a teenager."); <br>
+            }
+            else { <br>
+            console.log("You are an adult."); <br>
+            }
+        </p>
+        <h5> switch statement</h5>
+        <p>Example</p>
+        <p>
+            let day = 3; <br>
+            <br>
+            switch (day) { <br>
+            case 1: <br>
+            console.log("Monday"); <br>
+            break; <br>
+            case 2: <br>
+            console.log("Tuesday"); <br>
+            break; <br>
+            case 3: <br>
+            console.log("Wednesday"); <br>
+            break; <br>
+            default: <br>
+            console.log("Invalid day"); <br>
+            }
+        </p>
+        <h5>ternary operator</h5>
+        <p>Example</p>
+        <p>
+            let age = 18; <br>
+            let canVote = (age >= 18) ? "Yes" : "No"; <br>
+            console.log(canVote);
+        </p>
+    </div><hr>
+    <div>
+        <h1 style="text-align: center;">String Methods</h1>
+        <h4 class="a1"> What are String Methods?</h4>
+        <p> String methods are used to perform operations on strings.</p>
+        <h4>10.Types of String Methods</h4>
+        <h5>length</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let length = str.length; <br>
+            console.log(length); // 13
+        </p>
+        <h5> charAt()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let char = str.charAt(0); <br>
+            console.log(char); // H
+        </p>
+        <h5> toUpperCase()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let upperStr = str.toUpperCase(); <br>
+            console.log(upperStr); // "HELLO, WORLD!"
+        </p>
+        <h5> toLowerCase()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let lowerStr = str.toLowerCase(); <br>
+            console.log(lowerStr); // "hello, world!"
+        </p>
+        <h5> indexOf()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let index = str.indexOf("world"); <br>
+            console.log(index); // 7
+        </p>
+        <h5> slice()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let slicedStr = str.slice(0, 5); <br>
+            console.log(slicedStr); // "Hello"
+        </p>
+        <h5>replace()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let newStr = str.replace("world", "JavaScript"); <br>
+            console.log(newStr); // "Hello, JavaScript!"
+        </p>
+        <h5>trim()</h5>
+        <p>Example</p>
+        <p>
+            let str = "   Hello, world!   "; <br>
+            let trimmedStr = str.trim(); <br>
+            console.log(trimmedStr); // "Hello, world!"
+        </p>
+        <h5>split()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let words = str.split(", "); <br>
+            console.log(words); // ["Hello", "world!"]
+        </p>
+        <h5>concat()</h5>
+        <p>Example</p>
+        <p>
+            let str1 = "Hello, "; <br>
+            let str2 = "world!"; <br>
+            let result = str1.concat(str2); <br>
+            console.log(result); // "Hello, world!"
+        </p>
+        <h5>includes()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let hasHello = str.includes("Hello"); <br>
+            console.log(hasHello); // true
+        </p>
+        <h5>repeat()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello! "; <br>
+            let repeatedStr = str.repeat(3); <br>
+            console.log(repeatedStr); // "Hello! Hello! Hello! "
+        </p>
+        <h5>charCodeAt()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let charCode = str.charCodeAt(0); <br>
+            console.log(charCode); // 72
+        </p>
+        <h5>substring()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let substr = str.substring(0, 5); <br>
+            console.log(substr); // "Hello"
+        </p>
+        <h5>padStart()</h5>
+        <p>Example</p>
+        <p>
+            let str = "5"; <br>
+            let paddedStr = str.padStart(3, "0"); <br>
+            console.log(paddedStr); // "005"
+        </p>
+        <h5>padEnd()</h5>
+        <p>Example</p>
+        <p>
+            let str = "5"; <br>
+            let paddedStr = str.padEnd(3, "0"); <br>
+            console.log(paddedStr); // "500"
+        </p>
+        <h5>lastIndexOf()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let lastIndex = str.lastIndexOf("o"); <br>
+            console.log(lastIndex); // 8
+        </p>
+        <h5>search()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let searchIndex = str.search("world"); <br>
+            console.log(searchIndex); // 7
+        </p>
+        <h5>valueOf()</h5>
+        <p>Example</p>
+        <p>
+            let str = new String("Hello, world!"); <br>
+            let value = str.valueOf(); <br>
+            console.log(value); // "Hello, world!"
+        </p>
+        <h5>match()</h5>
+        <p>Example</p>
+        <p>
+            let str = "The rain in SPAIN stays mainly in the plain"; <br>
+            let matches = str.match(/ain/g); <br>
+            console.log(matches); // ["ain", "ain", "ain"]
+        </p>
+        <h5>replace()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let newStr = str.replace("world", "JavaScript"); <br>
+            console.log(newStr); // "Hello, JavaScript!"
+        </p>
+        <h5>replaceAll()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world! world!"; <br>
+            let newStr = str.replaceAll("world", "JavaScript"); <br>
+            console.log(newStr); // "Hello, JavaScript! JavaScript!"
+        </p>
+        <h5>at()</h5>
+        <p>Example</p>
+        <p>
+            let str = "Hello, world!"; <br>
+            let char = str.at(0); <br>
+            console.log(char); // "H"
+        </p>
+    </div><hr>
+    <div>
+        <h1 style="text-align: center;">Array Methods</h1>
+        <h4 class="a1"> What are Array Methods?</h4>
+        <p> Array methods are used to perform operations on arrays.</p>
+        <h4>11.Types of Array Methods</h4>
+        <h5>push()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3]; <br>
+            arr.push(4); <br>
+            console.log(arr); // [1, 2, 3, 4]
+        </p>
+        <h5>pop()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.pop(); <br>
+            console.log(arr); // [1, 2, 3]
+        </p>
+        <h5>shift()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.shift(); <br>
+            console.log(arr); // [2, 3, 4]
+        </p>
+        <h5>unshift()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [2, 3, 4]; <br>
+            arr.unshift(1); <br>
+            console.log(arr); // [1, 2, 3, 4]
+        </p>
+        <h5>indexOf()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let index = arr.indexOf(3); <br>
+            console.log(index); // 2
+        </p>
+        <h5>slice()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let slicedArr = arr.slice(1, 3); <br>
+            console.log(slicedArr); // [2, 3]
+        </p>
+        <h5>splice()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.splice(1, 2); <br>
+            console.log(arr); // [1, 4]
+        </p>
+        <h5>forEach()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.forEach(function(element) { <br>
+                console.log(element); <br>
+            }); <br>
+        </p>
+        <h5>map()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let mappedArr = arr.map(function(element) { <br>
+                return element * 2; <br>
+            }); <br>
+            console.log(mappedArr); // [2, 4, 6, 8]
+        </p>
+        <h5>filter()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let filteredArr = arr.filter(function(element) { <br>
+                return element > 2; <br>
+            }); <br>
+            console.log(filteredArr); // [3, 4]
+        </p>
+        <h5>reduce()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let sum = arr.reduce(function(accumulator, currentValue) { <br>
+                return accumulator + currentValue; <br>
+            }, 0); <br>
+            console.log(sum); // 10
+        </p>
+        <h5>find()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let foundElement = arr.find(function(element) { <br>
+                return element > 2; <br>
+            }); <br>
+            console.log(foundElement); // 3
+        </p>
+        <h5>sort()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [4, 2, 1, 3]; <br>
+            arr.sort(); <br>
+            console.log(arr); // [1, 2, 3, 4]
+        </p>
+        <h5>concat()</h5>
+        <p>Example</p>
+        <p>
+            let arr1 = [1, 2]; <br>
+            let arr2 = [3, 4]; <br>
+            let combinedArr = arr1.concat(arr2); <br>
+            console.log(combinedArr); // [1, 2, 3, 4]
+        </p>
+        <h5>join()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let joinedString = arr.join(", "); <br>
+            console.log(joinedString); // "1, 2, 3, 4"
+        </p>
+        <h5>includes()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let hasThree = arr.includes(3); <br>
+            console.log(hasThree); // true
+        </p>
+        <h5>reverse()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.reverse(); <br>
+            console.log(arr); // [4, 3, 2, 1]
+        </p>
+        <h5>flat()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, [3, 4]]; <br>
+            let flattenedArr = arr.flat(); <br>
+            console.log(flattenedArr); // [1, 2, 3, 4]
+        </p>
+        <h5>fill()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.fill(0, 1, 3); <br>
+            console.log(arr); // [1, 0, 0, 4]
+        </p>
+        <h5>copyWithin()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.copyWithin(1, 2, 4); <br>
+            console.log(arr); // [1, 3, 4, 4]
+        </p>
+        <h5>some()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let hasEven = arr.some(function(element) { <br>
+                return element % 2 === 0; <br>
+            }); <br>
+            console.log(hasEven); // true
+        </p>
+        <h5>every()</h5>
+        <p>Example</p>
+        <p>
+            let arr = [1, 2, 3, 4]; <br>
+            let allEven = arr.every(function(element) { <br>
+                return element % 2 === 0; <br>
+            }); <br>
+            console.log(allEven); // false
+        </p>
+    </div>
+</body>
+
+</html>
