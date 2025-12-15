@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function add() {
+            let num1 = parseInt(document.a1.a2.value);
+            let num2 = parseInt(document.a1.a3.value);
+            let num3 = num1 / num2;
+            document.writeln("the addtion is:" + num3)
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="a1">
+        <input type="number" name="a2">
+        <input type="number" name="a3">
+        <input type="button" value="GET" onmouseover="add()">
+    </form>
+</body>
+
+</html>

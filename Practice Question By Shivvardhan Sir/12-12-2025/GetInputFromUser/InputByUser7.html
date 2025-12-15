@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Switch Example</title>
+</head>
+<body>
+  <h2>Enter a command:</h2>
+  
+
+  <input type="text" id="userInput" placeholder="Type start, stop, or pause">
+  
+
+  <button onclick="shubham()">Submit</button>
+  
+
+  <p id="output"></p>
+  
+  <script>
+    function shubham() {
+
+      let input = document.getElementById("userInput").value.toLowerCase();
+      
+
+      switch (input) {
+        case "start":
+          document.getElementById("output").innerText = "You chose to START!";
+          break;
+        case "stop":
+          document.getElementById("output").innerText = "You chose to STOP!";
+          break;
+        case "pause":
+          document.getElementById("output").innerText = "You chose to PAUSE!";
+          break;
+        default:
+          document.getElementById("output").innerText = "Unknown command.";
+      }
+    }
+  </script>
+</body>
+</html>

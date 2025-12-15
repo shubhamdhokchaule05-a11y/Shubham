@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function add() {
+            let week = parseInt(document.a1.a2.value);
+            switch (week) {
+                case 1:
+                    console.log("MON");
+                    break;
+                case 2:
+                    console.log("TUE");
+                    break;
+                case 3:
+                    console.log("WED");
+                    break;
+                case 4:
+                    console.log("THUS");
+                    break;
+                case 5:
+                    console.log("FRI");
+                    break;
+                case 6:
+                    console.log("SAT");
+                    break;
+                case 7:
+                    console.log("SUN");
+                    break;
+                default:
+                    console.log("Your are out of date");
+                    break;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="a1">
+        <input type="number" name="a2">
+        <input type="button" value="GET" onmouseover="add()">
+    </form>
+</body>
+
+</html>
